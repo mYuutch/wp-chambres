@@ -1,0 +1,254 @@
+/*
+Theme Name: Chambres d'hôte
+Template: twentytwentyone
+*/
+
+*{
+    margin: 0;
+}
+body{
+    background-color: white !important;
+}
+
+/* Room Grid */
+.room-grid {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; /* Gap between cards */
+}
+
+/* Room Card */
+.room-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.entry-thumbnail{
+    position: relative;
+    display: flex;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+/* Room Thumbnail */
+.room-thumbnail  {
+  scale: 4.5;
+  position: absolute;
+  
+
+  
+
+}
+
+
+/* Room Info */
+.room-info {
+    padding: 20px;
+}
+
+
+
+/* Room Title */
+.entry-title a {
+
+    padding: 15px;
+    font-size: 1.5vw;
+    color: #333;
+    text-decoration: none;
+}
+
+.entry-title a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Room Info Text */
+.room-info p {
+    margin: 0 0 10px;
+}
+
+/* Room Excerpt */
+.entry-excerpt {
+  opacity: .8;
+    margin-top: 25px;
+}
+
+.entry-content{
+    margin-top: 0 !important;
+}
+
+
+.single-container{
+    width: 80%;
+    display: flex;
+    position: relative;
+    margin: auto;
+    gap: 20px;
+    height: 500px;
+}
+
+.single-thumbnail{
+    width: 50%;
+    overflow: hidden;
+}
+
+.single-thumbnail img{
+    scale:5
+}
+.single-details{
+    width: 50%;
+}
+
+.single-details h1{
+    font-size: 2vw;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.single-details p{
+    opacity: .7;
+    font-size: .8vw;
+    width: 80%;
+    text-align: right;
+    margin-left: auto;
+}
+
+.single-numbers {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.single-numbers p {
+    font-size: 2vw;
+    opacity: 1;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.single-numbers p span{
+    opacity: .7;
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+
+.form-container{
+    display: flex;
+    width: 75%;
+    margin: auto;
+}
+
+.presentation{
+    width: 80%;
+    margin: auto;
+}
+
+.presentation-title{
+    font-size: 5vw;
+    width: 30%;
+    
+    left: 10%;
+}
+
+.presentation-desc{
+    columns: 2;
+    font-size: 0.8vw;
+    width: 60%;
+  
+   margin-top: 250px;
+   margin-bottom: 250px;
+    font-style: italic;
+    opacity: .8;
+    margin-left: auto;
+}
+
+.gallery-container{
+    border-radius: 700px 700px 0px 0px;
+    position: relative;
+    margin-top: 200vh;
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    grid-gap: 5px;  
+}
+
+.link-container{
+    display: flex;
+    margin: auto;
+}
+.link{
+ margin: auto;
+ font-size: 2rem;
+
+}
+.gallery-container div{
+    overflow: hidden;
+}
+
+.gallery-container img{
+    scale: 5;
+}
+
+.contact-wrapper{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+   
+}
+
+.contact h3{
+    font-style: italic;
+    opacity: .8;
+}
+
+.contact{
+ width: 80%;
+}
+
+.contact-details{
+    
+    width: 60%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    opacity: .5;
+    margin-left: auto;
+    margin-right: auto;
+}
+.thumb-container{
+    overflow: hidden;
+}
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .room-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .room-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}
